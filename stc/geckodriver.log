@@ -1,0 +1,56 @@
+1662266220223	geckodriver	INFO	Listening on 127.0.0.1:63082
+1662266222285	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63083" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ALL\\AppData\\Local\\Temp\\rust_mozprofile1VimJx"
+1662266733656	addons.update-checker	WARN	onUpdateCheckComplete failed to parse update manifest: [Exception... "Update manifest is missing a required addons property."  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://gre/modules/addons/AddonUpdateChecker.jsm :: getRequiredProperty :: line 473"  data: no] Stack trace: getRequiredProperty()@resource://gre/modules/addons/AddonUpdateChecker.jsm:473 < parseJSONManifest()@resource://gre/modules/addons/AddonUpdateChecker.jsm:483 < UpdateParser.prototype.onLoad/parser()@resource://gre/modules/addons/AddonUpdateChecker.jsm:655 < UpdateParser.prototype.onLoad()@resource://gre/modules/addons/AddonUpdateChecker.jsm:675 < UpdateParser/<()@resource://gre/modules/addons/AddonUpdateChecker.jsm:593
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: /buckets/monitor/collections/changes/records is not a valid URL.
+Full stack: syncClients@resource://gre/modules/services-common/blocklist-updater.js:58:26
+TaskImpl_run@resource://gre/modules/Task.jsm:319:42
+TaskImpl@resource://gre/modules/Task.jsm:277:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:252:14
+Task_spawn@resource://gre/modules/Task.jsm:166:12
+this.checkVersions@resource://gre/modules/services-common/blocklist-updater.js:35:10
+Blocklist.prototype.notify@resource://gre/components/nsBlocklistService.js:636:7
+TM_notify/<@resource://gre/components/nsUpdateTimerManager.js:218:11
+TM_notify@resource://gre/components/nsUpdateTimerManager.js:263:7
+
+*************************
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 1633: NS_ERROR_FILE_NOT_FOUND: Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIFile.isDirectory]
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0092,name=PBrowser::Msg_UpdateNativeWindowHandle) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0085,name=PBrowser::Msg_Destroy) Closed channel: cannot send/recv
+
+[Child 4664] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-esr52-w32-000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 345
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2C0001,name=PBrowser::Msg_AsyncMessage) Closed channel: cannot send/recv
+
+JavaScript error: chrome://browser/content/tab-content.js, line 321: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIMessageSender.sendAsyncMessage]
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2C0001,name=PBrowser::Msg_AsyncMessage) Closed channel: cannot send/recv
+
+JavaScript error: chrome://browser/content/content.js, line 672: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIMessageSender.sendAsyncMessage]
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2C0001,name=PBrowser::Msg_AsyncMessage) Closed channel: cannot send/recv
+
+JavaScript error: chrome://global/content/browser-child.js, line 116: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIMessageSender.sendAsyncMessage]
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2C002B,name=PBrowser::Msg_SetInputContext) Closed channel: cannot send/recv
+
+rror: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 8708, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x160001,name=PBrowser::Msg_AsyncMessage) Closed channel: cannot send/recv
+
+JavaScript error: chrome://browser/content/tab-content.js, line 281: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIMessageSender.sendAsyncMessage]
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x160001,name=PBrowser::Msg_AsyncMessage) Closed channel: cannot send/recv
+
+JavaScript error: chrome://browser/content/content.js, line 705: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIMessageSender.sendAsyncMessage]
+[Child 9076, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 9076, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x16002C,name=PBrowser::Msg_SetInputContext) Closed channel: cannot send/recv
+
